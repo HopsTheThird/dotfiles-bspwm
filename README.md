@@ -1,2 +1,2 @@
-# dotfiles-bspwm
-My Arch Linux BSPWM dotfiles
+# Arch Linux / BSPWM dotfiles
+Configuration files for my Arch Linux / BSPWM daily driver setup
