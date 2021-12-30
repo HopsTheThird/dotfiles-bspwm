@@ -1,0 +1,33 @@
+#! /bin/sh
+
+set -xv
+exec 2>>/tmp/bspwm.log
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor HDMI-0 -d 1 2 3 4 5 
+bspc monitor eDP -d 6 7 8 9 10 
+
+bspc config border_width         2
+bspc config window_gap		 10
+bspc config split_ratio          0.52
+
+bspc config focused_border_color "#ED82A8"
+bspc config normal_border_color "#2E3440"
+bspc config active_border_color "#B48EAD"
+
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config paddingless_monocle true
+bspc config single_monocle false
+bspc config focus_follows_pointer true
+                        
+#AutoStart
+picom --config $HOME/.config/picom/picom.conf &
+sxhkd &
+xrandr --output eDP --mode 1920x1080 --noprimary --right-of HDMI-0 --output HDMI-0 --primary
+feh --bg-fill wallpapers/bg_6.jpg &
+dunst &
+$HOME/.config/polybar/colorblocks/launch.sh
+brightnessctl s 500 -d gmux_backlight
+
