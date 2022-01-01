@@ -28,6 +28,6 @@ sxhkd &
 xrandr --output eDP --mode 1920x1080 --noprimary --right-of HDMI-0 --output HDMI-0 --primary
 feh --bg-fill wallpapers/bg_6.jpg &
 dunst &
-$HOME/.config/polybar/colorblocks/launch.sh
+$HOME/.config/polybar/launch.sh
 brightnessctl s 500 -d gmux_backlight
 
