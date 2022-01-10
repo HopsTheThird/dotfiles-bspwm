@@ -23,11 +23,12 @@ bspc config single_monocle false
 bspc config focus_follows_pointer true
                         
 #AutoStart
-picom --config $HOME/.config/picom/picom.conf &
+picom &
 sxhkd &
 xrandr --output eDP --mode 1920x1080 --noprimary --right-of HDMI-0 --output HDMI-0 --primary
-feh --bg-fill wallpapers/bg_6.jpg &
+feh --bg-fill $HOME/wallpapers/skyline_sunset.jpg &
 dunst &
 $HOME/.config/polybar/launch.sh
 brightnessctl s 500 -d gmux_backlight
-
+polychromatic-cli -e MousePadAura 
+polychromatic-cli -e KeyboardAura 

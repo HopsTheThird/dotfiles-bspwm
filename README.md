@@ -24,6 +24,7 @@ Feel free to use any of the code or images found in these files!
 - [ ] theme discord css
 - [ ] find/make a color scheme
 - [ ] theme cmus 
-- [ ] configure zsh and vim more (theming and plugins)
+- [ ] configure vim more (theming and plugins)
 - [ ] upload fonts to repository
 - [ ] make more rices + add screenshots to readme
+- [ ] find new wallpaper / convert to a purple themed setup
