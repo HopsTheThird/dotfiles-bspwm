@@ -9,14 +9,13 @@ Feel free to use any of the code or images found in these files!
 
 ## Programs
 
-- **Window Manager**: ```bspwm``` (obviously)
+- **Window Manager**: ```bspwm``` 
 - **Terminal Emulator**: ```alacritty```
-- **Shell**: ```zsh```
+- **Shell**: ```zsh``` with ```ohmyzsh```
 - **Hotkey Daemon**: ```sxhkd```
 - **Notification Daemon**: ```dunst```
 - **Compositor**: ```picom-jonaburg```
 - **Bar**: ```polybar```
-
 
 ### Todo:
 - [ ] find/make a color scheme
