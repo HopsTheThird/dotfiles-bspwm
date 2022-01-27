@@ -18,13 +18,17 @@ super + Print
 super + Return
 	alacritty
 
+# spotify
+super + a
+    LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify &
+
 # firefox
 super + c
 	firefox
 
 # program launcher
 super + @space
-	dmenu_run
+	dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#ED82A8' -nf '#bbbbbb'
 
 # make sxhkd reload its configuration files:
 super + Escape
