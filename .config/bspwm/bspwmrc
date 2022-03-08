@@ -12,9 +12,9 @@ bspc config border_width         2
 bspc config window_gap		 10
 bspc config split_ratio          0.52
 
-bspc config focused_border_color "#2E3440"
+bspc config focused_border_color "#5c4958"
 bspc config normal_border_color "#2E3440"
-bspc config active_border_color "#2E3440"
+bspc config active_border_color "#5c525a"
 
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
@@ -25,12 +25,10 @@ bspc config focus_follows_pointer true
 #AutoStart
 picom &
 sxhkd &
-xrandr --output eDP --mode 1920x1080 --noprimary --right-of HDMI-0 --output HDMI-0 --primary
-feh --bg-fill $HOME/wallpapers/skyline_sunset.jpg &
+xrandr --output eDP --mode 1920x1080 --noprimary --left-of HDMI-0 --output HDMI-0 --primary
+feh --bg-fill $HOME/wallpapers/evening-sky.png &
 dunst &
 $HOME/.config/polybar/launch.sh
 brightnessctl s 500 -d gmux_backlight
-systemctl start windscribe
 polychromatic-cli -e MousePadAura 
 polychromatic-cli -e KeyboardAura
-
